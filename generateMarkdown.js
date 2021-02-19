@@ -16,13 +16,27 @@ function generateMarkdown(data) {
 
   # Table of Contents
 
-  ## [Description ${data.description}](#description)
-  ## [Installation ${data.installation}](#installation)
-  ## [Usage ${data.usage}](#usage)
-  ## [Contributing ${data.contributing}](#contributing)
-  ## [Tests ${data.tests}](#tests)
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
 
-  
+  ## Description
+  ${data.description}
+
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## Contributing
+  If you have any questions, please contact me at ${data.email}.
+  You can also visit my [Github Page](https://github.com/${data.github}). 
+
+  ## Tests
+  ${data.tests}
 
 `;
 }
