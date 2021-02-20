@@ -51,12 +51,11 @@ const questions = [
     message: "How do you run tests for your project?",
   },
   {
-    // Liscence
-    // https://choosealiscense.com
+    // License
     type: "list",
-    name: "liscense",
-    choices: ["MIT", "apache", "mozilla", "no licesnse"],
-    message: "Choose your liscense.",
+    name: "license",
+    choices: ["MIT", "apache", "mozilla", "no license"],
+    message: "Choose your license.",
   },
   {
     // Github Username
