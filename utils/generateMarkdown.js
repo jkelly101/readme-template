@@ -17,7 +17,7 @@ function renderLicenseLink(license) {
     return `https://choosealicense.com/licenses/apache-2.0/`;
   } else if (license === "mozilla") {
     return `https://choosealicense.com/licenses/mpl-2.0/`;
-  } else if (license === "no liscense") {
+  } else if (license === "no license") {
     return "";
   }
 }
@@ -26,9 +26,9 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license == "MIT" || license == "apache" || license == "mozilla") {
-    `## License
+    return `## License
     ${renderLicenseBadge(license)}
-    * ${renderLicenseLink}`;
+    * ${renderLicenseLink(license)}`;
   } else {
     return "";
   }
@@ -45,7 +45,7 @@ function generateMarkdown(data) {
  
   * [Installation](#installation)  
   * [Usage](#usage)  
-  * [Liscense](#liscense)
+  * [License](#license)
   * [Contributions](#contributions)  
   * [Tests](#tests)  
 
