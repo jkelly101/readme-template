@@ -27,16 +27,10 @@ const questions = [
       "What are the steps required to install your project?",
   },
   {
-    // Instructions
-    type: "input",
-    name: "instructions",
-    message: "Provide instructions on how to use your project.",
-  },
-  {
     // Usage
     type: "input",
     name: "usage",
-    message: "How do you use your project?",
+    message: "Provide instructions and examples for use.",
   },
   {
     // Contributing

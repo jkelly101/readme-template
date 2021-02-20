@@ -55,18 +55,18 @@ function generateMarkdown(data) {
   ${data.installation}  
 
   ## Usage  
-  ${data.usage}  
+  ${data.usage} 
+  
+  ${renderLicenseSection(data.license)}
 
-  ## Contributing  
+  ## Contributing 
+  
+  ## Tests  
+  ${data.tests}
 
   ## Questions
   If you have any questions, please contact me at ${data.email}.  
-  You can also visit my [Github Page](https://github.com/${data.github}).   
-
-  ## Tests  
-  ${data.tests}
-  
-${renderLicenseSection(data.license)}
+  You can also visit my [Github Page](https://github.com/${data.github}).  
 `;
 }
 
