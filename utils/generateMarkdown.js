@@ -27,8 +27,8 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license == "MIT" || license == "apache" || license == "mozilla") {
     return `## License
-    ${renderLicenseBadge(license)}
-    * ${renderLicenseLink(license)}`;
+${renderLicenseBadge(license)}
+* ${renderLicenseLink(license)}`;
   } else {
     return "";
   }
@@ -39,16 +39,17 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   # Description
+  
   ${data.description}
 
   # Table of Contents  
  
   * [Installation](#installation)  
   * [Usage](#usage)  
-  * [License](#license)
-  * [Contributions](#contributions) 
+  * [Contributing](#contributing) 
   * [Questions](#questions) 
   * [Tests](#tests)  
+  * [License](#license)
 
   ## Installation  
   ${data.installation}  
@@ -56,7 +57,7 @@ function generateMarkdown(data) {
   ## Usage  
   ${data.usage}  
 
-  ## Contributions  
+  ## Contributing  
 
   ## Questions
   If you have any questions, please contact me at ${data.email}.  
@@ -65,7 +66,7 @@ function generateMarkdown(data) {
   ## Tests  
   ${data.tests}
   
-  ${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}
 `;
 }
 
